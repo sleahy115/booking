@@ -13,27 +13,42 @@
   <div class="container">
   <h1>Spa services</h1>
   <h1>Book Appointment</h1>
-  <form class="form-horizontal">
-    <div class="form-group">
-      <label for="inputName" class="col-sm-2 control-label">Customer Name</label>
-      <div class="col-sm-10">
-        <input type="email" class="form-control" id="inputName" placeholder="Customer Name">
+  <div id="appointment">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Customer Name</label>
+        <div class="col-sm-10">
+          <input type="name" class="form-control" id="name" placeholder="Customer Name">
+        </div>
       </div>
-    </div>
-    <div class="form-group">
-      <label for="inputDate" class="col-sm-2 control-label">Date of Appointment</label>
-      <div class="col-sm-10">
-        <input type="date" class="form-control" id="inputDate" placeholder="Date of appointment">
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="service" class="col-sm-2 control-label">Service Requested</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="service" placeholder="Service requested">
+          </div>
+        </div>
+      <div class="form-group">
+        <label for="date" class="col-sm-2 control-label">Date of Appointment</label>
+        <div class="col-sm-10">
+          <input type="date" class="form-control" id="date" placeholder="Date of appointment">
+        </div>
       </div>
-    </div>
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Submit</button>
+      <div class="form-group">
+        <label for="time" class="col-sm-2 control-label">Time of Appointment</label>
+        <div class="col-sm-10">
+          <input type="time" class="form-control" id="time" placeholder="Time of appointment">
+        </div>
       </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+      </div>
+      </form>
     </div>
-    </form>
-
-
-  </div>
+    <div id="show-apppointment">
+      <p>Appointment confirmed: Appointment for <span class="name"></span> on <span class="date"></span> at <span class="time"></span> for <span class="service"></span></p>
+    </div>
   </body>
 </html>
