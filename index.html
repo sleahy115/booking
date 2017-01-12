@@ -12,6 +12,14 @@
   <h1 class="jumbotron"> Mel's Spa</h1>
   <div class="container">
   <h1>Spa services</h1>
+  <h2 id="massage">Massage</h2>
+    <img src="img/massage-pic.jpg" alt="massage table" id="massage-pic">
+  <h2 id="facial">Facial</h2>
+      <img src="img/facial-pic.jpg" alt="facial" id="facial-pic">
+  <h2 id="mani">Manicure/Pedicure</h2>
+      <img src="img/mani-pic.jpg" alt="mani/pedi" id="mani-pic">
+  <h2 id="hair">Hair cut</h2>
+      <img src="img/hair-pic.jpg" alt="hair cut" id="hair-pic">
   <h1>Book Appointment</h1>
   <div id="appointment">
     <form class="form-horizontal">
@@ -21,13 +29,6 @@
           <input type="name" class="form-control" id="name" placeholder="Customer Name">
         </div>
       </div>
-      <form class="form-horizontal">
-        <div class="form-group">
-          <label for="service" class="col-sm-2 control-label">Service Requested</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="service" placeholder="Service requested">
-          </div>
-        </div>
       <div class="form-group">
         <label for="date" class="col-sm-2 control-label">Date of Appointment</label>
         <div class="col-sm-10">
@@ -39,6 +40,15 @@
         <div class="col-sm-10">
           <input type="time" class="form-control" id="time" placeholder="Time of appointment">
         </div>
+        <div class="form-group">
+          <label for="service" class="col-sm-2 control-label">Select Service</label>
+          <select class="form-control" "col-sm-10" id="service">
+            <option>Massage</option>
+            <option>Facial</option>
+            <option>Manicure/Pedicure</option>
+            <option>Hair cut</option>
+        </select>
+      </div>
       </div>
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
@@ -50,5 +60,6 @@
     <div id="show-apppointment">
       <p>Appointment confirmed: Appointment for <span class="name"></span> on <span class="date"></span> at <span class="time"></span> for <span class="service"></span></p>
     </div>
+  </div>
   </body>
 </html>
